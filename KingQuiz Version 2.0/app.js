@@ -27,8 +27,7 @@ function setAvailableQuestion(){
 
 
 function getNewQuestion(){
-    explanationBox.querySelector(".questionExplanation").innerHTML = ""
-    explanationBox.classList.add("hide");
+    explanationBox.classList.remove("hide");
     optionContainer.innerHTML = '';
     let animationDelay = 0.1;
     questionNumber.innerHTML = " Question " + (questionCounter + 1) + " of " +  "5";
@@ -87,8 +86,6 @@ function getResult(element){
 
 function getExplanation(){
     explanationBox.querySelector(".questionExplanation").innerHTML = currentQuestion.e;
-    
-    document.getElementById("image").src = currentQuestion.img
 }
 
 function unclickableOptions(){
@@ -127,6 +124,7 @@ function quizOver(){
     quizBox.classList.add("hide");
     resultBox.classList.remove("hide");
     quizResult();
+    explanationBox.classList.add("hide");
 
 }
 function quizResult(){
