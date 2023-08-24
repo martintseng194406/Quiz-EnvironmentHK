@@ -137,11 +137,9 @@ function quizResult(){
     resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + questionCounter;
     if(correctAnswers>2){
         resultBox.querySelector(".celebration").innerHTML = '"Sucess is not final : It is the courage to continue that counts." -Winston Churchill'
-        resultBox.querySelector(".celebration2").innerHTML = '"Well done and keep doing even better!" -King William'
     }
     else{
         resultBox.querySelector(".celebration").innerHTML = '"failure is not fatal : It is the courage to continue that counts." -Winston Churchill'
-        resultBox.querySelector(".celebration2").innerHTML = '"Cheer up and do better next time!" -King William'
     }
 }
 
