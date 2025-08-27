@@ -1,0 +1,135 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Center Container */
+.center {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.center h9 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Text Field Styling */
+.txt_field {
+    position: relative;
+    margin: 20px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #999;
+    font-size: 1rem;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    font-size: 0.8rem;
+    color: #6e8efb;
+}
+
+.txt_field input:focus {
+    border-bottom: 2px solid #6e8efb;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+    text-align: left;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6e8efb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #a777e3;
+}
+
+/* Register Link */
+.register {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.register a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.register a:hover {
+    color: #a777e3;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .center {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .center h9 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
