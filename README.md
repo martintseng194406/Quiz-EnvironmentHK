@@ -1,2 +1,1 @@
-# Quiz-EnvironmentHK
-A random question quiz about some environmental problems of Hong Kong
+Initiative for a dynamic website using Firebase hosting, cloud functions
